@@ -4,108 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Code-Camp</title>
-    <style>
-        .slids{
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.493);
-            color: #fff;
-        }
-        .slider-h{
-            font-size: 70px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg py-5 container">
-            <div class="container-fluid">
-              <a class="navbar-brand " href="#"><h2 class="fw-bold">Code-Camp</h2></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Current Course</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Many More
+<body class="bg-white">
+    <header class="container mx-auto bg-white">
+        <div class="navbar bg-base-100 bg-white" >
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li tabindex="0">
+                    <a class="justify-between">
+                      Parent
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">About Us</a></li>
-                      <li><a class="dropdown-item" href="#">Our Course</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
                     </ul>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li> -->
+                  <li><a>Item 3</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-info" type="submit">Search</button>
-                </form>
               </div>
+              <a class="btn btn-ghost normal-case text-xl">Code-Camp</a>
             </div>
-          </nav>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal p-0">
+                <li><a>Item 1</a></li>
+                <li tabindex="0">
+                  <a>
+                    Parent
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                  </a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn border-0 bg-cyan-500 text-white">Register</a>
+            </div>
+          </div>
     </header>
-    <section>
-        <div class="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner rounded-3">
-                  <div style="background: url(./img/cover/cover-1.png)  ; background-size: cover; height: 70vh;" class="carousel-item active w-100 text-center">
-                    <div class="d-flex flex-column align-items-center justify-content-evenly slids">
+    <section >
+      <div class="container mx-auto h-screen">
 
-                        <h1 class="slider-h fw-bolder">Get Started Digital <br> Learning</h1>
-                        <h3 class="fs-5">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
-                        <button class="btn btn-info py-3 px-5">Get Started</button>
-                    </div>
-                    
-                    <!-- <img src="./img/cover/cover-1.png" class="d-block w-100" alt="..."> -->
-                  </div>
-                  <div style="background: url(./img/cover/cover-2.jpg) ; background-size: cover; height: 70vh;" class="carousel-item w-100 text-center">
-                    <div class="d-flex flex-column align-items-center justify-content-around slids">
-
-                        <h1 class="slider-h fw-bolder">Get Started Digital <br> Learning</h1>
-                        <h3 class="fs-5">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
-                        <button class="btn btn-info py-3 px-5">Get Started</button>
-                    </div>
-                    <!-- <img src="./img/cover/cover-2.jpg" class="d-block w-100" alt="..."> -->
-                  </div>
-                  <div style="background: url(./img/cover/cover-3.jpg) ; background-size: cover; height: 70vh;" class="carousel-item w-100 text-center">
-                    <div class="d-flex flex-column align-items-center justify-content-around slids">
-
-                        <h1 class="slider-h fw-bolder">Get Started Digital <br> Learning</h1>
-                        <h3 class="fs-5">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
-                        <button class="btn btn-info py-3 px-5">Get Started</button>
-                    </div>
-                    <!-- <img src="./img/cover/cover-3.jpg" class="d-block w-100" alt="..."> -->
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+        <div class="carousel w-full text-center text-white h-3/4 rounded-lg">
+          <div style="background-image: url(./img/cover/cover-1.png) ;" id="slide1" class=" carousel-item relative w-full bg-cover">
+            <div  class="flex flex-col justify-evenly items-center mx-auto">
+              
+              <h1 class="">Get Started Digital <br> Learning</h1>
+              <h3 class="">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
+              <button class="btn  btn-accent">Get Started</button>
+            </div>
+            <!-- <img src="https://placeimg.com/800/200/arch" class="w-full" /> -->
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div style="background-image: url(./img/cover/cover-2.jpg) ;" id="slide2" class=" bg-cover carousel-item relative w-full">
+          <div class="flex flex-col justify-evenly items-center w-full bg-slate-600/50">
+              
+            <h1 class="">Get Started Digital <br> Learning</h1>
+            <h3 class="">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
+            <button class="btn  btn-accent">Get Started</button>
+          </div>
+          <!-- <img src="https://placeimg.com/800/200/arch" class="w-full" /> -->
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- <div id="slide3" class="carousel-item relative w-full">
+          <div class="flex flex-col justify-evenly items-center mx-auto">
+              
+            <h1 class="">Get Started Digital <br> Learning</h1>
+            <h3 class="">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
+            <button class="btn  btn-accent">Get Started</button>
+          </div>
+          <img src="https://placeimg.com/800/200/arch" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>  -->
+        <div style="background-image: url(./img/cover/cover-3.jpg) ;" id="slide3" class="  carousel-item relative w-full bg-cover">
+          <div class="flex flex-col justify-evenly items-center mx-auto">
+              
+            <h1 class="">Get Started Digital <br> Learning</h1>
+            <h3 class="">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
+            <button class="btn  btn-accent">Get Started</button>
+          </div>
+          <!-- <img src="https://placeimg.com/800/200/arch" class="w-full" /> -->
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
+      </div>
+    </div>
     </section>
-
-
-
-    <!-- -----------------------------------------  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
-</body>
-</html>
+  </html>

@@ -7,46 +7,51 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
     <title>Code Camp</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
 </head>
 <body class="bg-white">
     <header class="container mx-auto bg-white">
-        <div class="navbar bg-base-100 bg-white h-36" >
+        <div class="navbar text-xl bg-base-100 bg-white h-36" >
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
                 <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li tabindex="0">
+                  <li><a>Course</a></li>
+                  <!-- <li tabindex="0">
                     <a class="justify-between">
-                      Parent
+                      More
                       <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                     </a>
                     <ul class="p-2">
                       <li><a>Submenu 1</a></li>
                       <li><a>Submenu 2</a></li>
                     </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                  </li> -->
+                  <li><a>About Us</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost normal-case text-xl">Code-Camp</a>
+              <a class="btn btn-ghost normal-case text-4xl font-semibold">Code-Camp</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal p-0">
-                <li><a>Item 1</a></li>
-                <li tabindex="0">
+                <li><a>Course</a></li>
+                <!-- <li tabindex="0">
                   <a>
-                    Parent
+                    More
                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                   </a>
                   <ul class="p-2">
                     <li><a>Submenu 1</a></li>
                     <li><a>Submenu 2</a></li>
                   </ul>
-                </li>
-                <li><a>Item 3</a></li>
+                </li> -->
+                <li><a>About Us</a></li>
               </ul>
             </div>
             <div class="navbar-end">
@@ -61,22 +66,22 @@
           <div style="background-image: url(./img/cover/cover-1.png) ;" id="slide1" class=" carousel-item relative w-full bg-cover ">
             <div  class="flex flex-col justify-evenly items-center w-full bg-slate-600/50">
               
-              <h1 class="">Get Started Digital <br> Learning</h1>
-              <h3 class="">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
-              <button class="btn  btn-accent">Get Started</button>
+              <h1 class="text-7xl font-semibold">Get Started Digital <br> Learning</h1>
+              <h3 class="text-lg font-semibold">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
+              <button class="btn text-xl btn-accent">Get Started</button>
             </div>
             <!-- <img src="https://placeimg.com/800/200/arch" class="w-full" /> -->
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❮</a> 
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div> 
         <div style="background-image: url(./img/cover/cover-2.jpg) ;" id="slide2" class=" bg-cover carousel-item relative w-full">
           <div class="flex flex-col justify-evenly items-center w-full bg-slate-600/50">
               
-            <h1 class="">Get Started Digital <br> Learning</h1>
-            <h3 class="">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
-            <button class="btn  btn-accent">Get Started</button>
+            <h1 class="text-7xl font-semibold">Get Started Digital <br> Learning</h1>
+            <h3 class="text-lg font-semibold">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
+            <button class="btn text-xl btn-accent">Get Started</button>
           </div>
           <!-- <img src="https://placeimg.com/800/200/arch" class="w-full" /> -->
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -100,9 +105,9 @@
         <div style="background-image: url(./img/cover/cover-3.jpg) ;" id="slide3" class="  carousel-item relative w-full bg-cover">
           <div class="flex flex-col justify-evenly items-center w-full bg-slate-600/50">
               
-            <h1 class="">Get Started Digital <br> Learning</h1>
-            <h3 class="">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
-            <button class="btn  btn-accent">Get Started</button>
+            <h1 class="text-7xl font-semibold">Get Started Digital <br> Learning</h1>
+            <h3 class="text-lg font-semibold">It is a long established fact that a reader will be distracted by the readable   <br>content of a page when looking at its layout.</h3>
+            <button class="btn text-xl btn-accent">Get Started</button>
           </div>
           <!-- <img src="https://placeimg.com/800/200/arch" class="w-full" /> -->
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -117,9 +122,9 @@
     <section>
       <div class=" container mx-auto">
         <div class="text-center">
-          <h1>Discover Our Popular <br>
+          <h1 class="text-6xl font-medium pb-5 text-neutral-900">Discover Our Popular <br>
             Courses</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable <br>
+            <p class="text-xl pb-8">It is a long established fact that a reader will be distracted by the readable <br>
               content of a page when looking at its layout.</p>
         </div>
         <div class="grid grid-cols-2 gap-5">
@@ -127,70 +132,128 @@
             <div>
               <img src="./img/course/course-1.png" alt="">
             </div>
-            <div>
-              <h1>Fundamental Of UI/UX Design</h1>
-              <p>Some quick example text to build on the card title 
+            <div class="flex p-6 flex-col justify-evenly items-start">
+              <h1 class="text-3xl text-neutral-900 font-bold">Fundamental Of UI/UX Design</h1>
+              <p class="text-xl">Some quick example text to build on the card title <br>
                 and make up the bulk of the card.</p>
-                <span>Price : 20$</span>
+                <span class="text-xl text-cyan-400 font-semibold">Price : 20$</span>
             </div>
           </div>
           <div class="flex border-2 rounded-lg">
             <div>
               <img src="./img/course/course-2.png" alt="">
             </div>
-            <div>
-              <h1>Fundamental Of UI/UX Design</h1>
-              <p>Some quick example text to build on the card title 
+            <div class="flex p-6 flex-col justify-evenly items-start">
+              <h1 class="text-3xl text-neutral-900 font-bold">Fundamental Of UI/UX Design</h1>
+              <p class="text-xl">Some quick example text to build on the card title <br>
                 and make up the bulk of the card.</p>
-                <span>Price : 20$</span>
+                <span class="text-xl text-cyan-400 font-semibold">Price : 20$</span>
             </div>
           </div>
           <div class="flex border-2 rounded-lg">
             <div>
               <img src="./img/course/course-3.png" alt="">
             </div>
-            <div>
-              <h1>Fundamental Of UI/UX Design</h1>
-              <p>Some quick example text to build on the card title 
+            <div class="flex p-6 flex-col justify-evenly items-start">
+              <h1 class="text-3xl text-neutral-900 font-bold">Fundamental Of UI/UX Design</h1>
+              <p class="text-xl">Some quick example text to build on the card title <br>
                 and make up the bulk of the card.</p>
-                <span>Price : 20$</span>
+                <span class="text-xl text-cyan-400 font-semibold">Price : 20$</span>
             </div>
           </div>
           <div class="flex border-2 rounded-lg">
             <div>
               <img src="./img/course/course-4.png" alt="">
             </div>
-            <div>
-              <h1>Fundamental Of UI/UX Design</h1>
-              <p>Some quick example text to build on the card title 
+            <div class="flex p-6 flex-col justify-evenly items-start">
+              <h1 class="text-3xl text-neutral-900 font-bold">Fundamental Of UI/UX Design</h1>
+              <p class="text-xl">Some quick example text to build on the card title <br>
                 and make up the bulk of the card.</p>
-                <span>Price : 20$</span>
+                <span class="text-xl text-cyan-400 font-semibold">Price : 20$</span>
             </div>
           </div>
           <div class="flex border-2 rounded-lg">
             <div>
               <img src="./img/course/course-5.png" alt="">
             </div>
-            <div>
-              <h1>Fundamental Of UI/UX Design</h1>
-              <p>Some quick example text to build on the card title 
+            <div class="flex p-6 flex-col justify-evenly items-start">
+              <h1 class="text-3xl text-neutral-900 font-bold">Fundamental Of UI/UX Design</h1>
+              <p class="text-xl">Some quick example text to build on the card title <br>
                 and make up the bulk of the card.</p>
-                <span>Price : 20$</span>
+                <span class="text-xl text-cyan-400 font-semibold">Price : 20$</span>
             </div>
           </div>
           <div class="flex border-2 rounded-lg">
             <div>
               <img src="./img/course/course-6.png" alt="">
             </div>
-            <div>
-              <h1>Fundamental Of UI/UX Design</h1>
-              <p>Some quick example text to build on the card title 
+            <div class="flex p-6 flex-col justify-evenly items-start">
+              <h1 class="text-3xl text-neutral-900 font-bold">Fundamental Of UI/UX Design</h1>
+              <p class="text-xl">Some quick example text to build on the card title <br>
                 and make up the bulk of the card.</p>
-                <span>Price : 20$</span>
+                <span class="text-xl text-cyan-400 font-semibold">Price : 20$</span>
             </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-center items-center">
+
+          <button class="btn border-0 bg-cyan-500 text-white">See More</button>
+        </div>
+        
+      </div>
+    </section>
+    <!-- ready to join -->
+
+    <section>
+      <div class="container mx-auto"> 
+        <div class="w-full bg-cyan-400 rounded-lg grid grid-cols-2">
+         
+            <div class="text-white">
+              <h1>Ready to join us?</h1>
+              <p>It is a long established fact that a reader will be distracted by the <br>
+                readable content of a page when looking at its layout.</p>
+            </div>
+            <div>
+<!-- The button to open modal -->
+<label for="my-modal-3" class="btn modal-button bg-white text-cyan-400 border-0">Register Now</label>
+
+
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- asked qs -->
+    <section>
+      <div class="container mx-auto">
+        <div class="w-full text-center">
+          <h1>Frequently Asked Questions</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable <br>
+            content of a page when looking at its layout.</p>
+        </div>
+        <div class="collapse collapse-arrow">
+          <input type="checkbox" class="peer" /> 
+          <div class="collapse-title text-xl font-medium">
+            What is the difference between grid and flexbox
+          </div>
+          <div class="collapse-content "> 
+            <p>Flexbox best for one dimensional Layout(like Row or Column)
+              CSS grid best for 2D layout (Row and Column)
+              Grid can do things Flexbox can't do, Flexbox can do things Grid can't do.
+              They can work together: a grid item can be a flexbox container. A flex item can be a grid container.
+              
+              With CSS Grid we can set relationships horizontally and vertically but at the same time. Flexbox, on the other hand, is stuck doing either vertical or horizontal layouts.</p>
           </div>
         </div>
       </div>
     </section>
+    
+<input type="checkbox" id="my-modal-3" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+  </div>
+</div>
   </body>
   </html>
